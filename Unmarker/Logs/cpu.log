@@ -1,0 +1,6 @@
+6/2 02:22:02.317  vendor: AuthenticAMD
+6/2 02:22:02.317  branding: AMD Ryzen 9 5900X 12-Core Processor            
+6/2 02:22:02.317  features: lahf64 cmpxchg16b sse sse2 sse3 ssse3 sse41 sse42 avx avx2 aesni clmul sha rdrand 
+6/2 02:22:02.317  sockets: 1
+6/2 02:22:02.317  cores: 12
+6/2 02:22:02.317  threads: 24

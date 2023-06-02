@@ -1,0 +1,136 @@
+<Ui xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Frame.lua" />
+	<Frame name="Frame1" inherits="BackdropTemplate" parent="UIParent" toplevel="true" enableMouse="true">
+		<Size x="348" y="362" />
+		<Anchors>
+			<Anchor x="-51" y="139" point="CENTER" />
+		</Anchors>
+		<KeyValues>
+			<KeyValue key="backdropInfo" value="BACKDROP_DIALOG_32_32" keyType="string" type="global" />
+		</KeyValues>
+		<Layers>
+			<Layer level="OVERLAY">
+				<FontString name="Title" inherits="GameFontNormal" text="Unmarker">
+					<Size x="80" y="20" />
+					<Anchors>
+						<Anchor x="132" y="-19" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString inherits="GameFontNormal" text="Powered by Taurentius">
+					<Size x="196" y="20" />
+					<Anchors>
+						<Anchor x="82" y="-329" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString name="FontStringPre" inherits="GameFontNormal" text="Wo soll das Plugin Anwendung finden?">
+					<Size x="298" y="20" />
+					<Anchors>
+						<Anchor x="28" y="-45" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString name="FontStringPVP" inherits="GameFontNormal" text="PVP / Schlachtfelder">
+					<Size x="129" y="20" />
+					<Anchors>
+						<Anchor x="66" y="-122" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString name="FontStringDungeons" inherits="GameFontNormal" text="Dungeons">
+					<Size x="66" y="20" />
+					<Anchors>
+						<Anchor x="66" y="-160" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString name="FontStringRaids" inherits="GameFontNormal" text="Raids">
+					<Size x="37" y="20" />
+					<Anchors>
+						<Anchor x="66" y="-198" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString name="FontStringKick" inherits="GameFontNormal" text="Soll Kickvote gestartet werden?">
+					<Size x="200" y="20" />
+					<Anchors>
+						<Anchor x="66" y="-236" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString name="FontStringTimer1" inherits="GameFontNormal" text="Nach ">
+					<Size x="32" y="20" />
+					<Anchors>
+						<Anchor x="28" y="-268" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString name="FontStringTimer2" inherits="GameFontNormal" text="Markierungen">
+					<Size x="132" y="20" />
+					<Anchors>
+						<Anchor x="101" y="-268" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+				<FontString name="FontStringOpenWorld" inherits="GameFontNormal" text="Open World">
+					<Size x="80" y="20" />
+					<Anchors>
+						<Anchor x="66" y="-84" point="TOPLEFT" />
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<CheckButton name="CheckButtonPVP" inherits="UICheckButtonTemplate" text="CheckButtonPVP">
+				<Anchors>
+					<Anchor x="28" y="-116" point="TOPLEFT" />
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="CheckButtonDungeons" inherits="UICheckButtonTemplate" text="CheckButtonDungeons">
+				<Anchors>
+					<Anchor x="28" y="-154" point="TOPLEFT" />
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="CheckButtonRaids" inherits="UICheckButtonTemplate" text="CheckButtonRaids">
+				<Anchors>
+					<Anchor x="28" y="-192" point="TOPLEFT" />
+				</Anchors>
+			</CheckButton>
+			<Button name="ButtonAccept" inherits="UIPanelButtonTemplate" text="Akzeptieren">
+				<Size x="75" y="23" />
+				<Anchors>
+					<Anchor x="28" y="-300" point="TOPLEFT" />
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						ButtonAccept_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="ButtonAbort" inherits="UIPanelButtonTemplate" text="Abbrechen">
+				<Size x="75" y="23" />
+				<Anchors>
+					<Anchor x="251" y="-300" point="TOPLEFT" />
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						ButtonAbort_OnClick()
+					</OnClick>
+				</Scripts>
+			</Button>
+			<CheckButton name="CheckButtonKick" inherits="UICheckButtonTemplate" text="CheckButtonKick">
+				<Anchors>
+					<Anchor x="28" y="-230" point="TOPLEFT" />
+				</Anchors>
+			</CheckButton>
+			<EditBox name="EditBoxTimes" inherits="InputBoxTemplate">
+				<Size x="24" y="32" />
+				<Anchors>
+					<Anchor x="71" y="-262" point="TOPLEFT" />
+				</Anchors>
+			</EditBox>
+			<CheckButton name="CheckButtonOpenWorld" inherits="UICheckButtonTemplate" text="CheckButtonOpenWorld">
+				<Anchors>
+					<Anchor x="28" y="-78" point="TOPLEFT" />
+				</Anchors>
+			</CheckButton>
+		</Frames>
+		<Scripts>
+			<OnShow>
+				Frame1_OnShow()
+			</OnShow>
+		</Scripts>
+	</Frame>
+</Ui>
