@@ -53,7 +53,7 @@
 					</Anchors>
 				</FontString>
 				<FontString name="FontStringTimer1" inherits="GameFontNormal" text="Nach ">
-					<Size x="32" y="20" />
+					<Size x="45" y="20" />
 					<Anchors>
 						<Anchor x="28" y="-268" point="TOPLEFT" />
 					</Anchors>
@@ -118,7 +118,7 @@
 			<EditBox name="EditBoxTimes" inherits="InputBoxTemplate">
 				<Size x="24" y="32" />
 				<Anchors>
-					<Anchor x="71" y="-262" point="TOPLEFT" />
+					<Anchor x="79" y="-262" point="TOPLEFT" />
 				</Anchors>
 			</EditBox>
 			<CheckButton name="CheckButtonOpenWorld" inherits="UICheckButtonTemplate" text="CheckButtonOpenWorld">

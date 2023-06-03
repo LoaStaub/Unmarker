@@ -1,7 +1,7 @@
 ## Title: Unmarker
 ## Version: 1.0
-## Author: Taurentius
-## Interface: 80205
+## Author: LoaStaub
+## Interface: 100100
 ## SavedVariables: UnmarkerDB
 Frame.xml
 Main.lua
