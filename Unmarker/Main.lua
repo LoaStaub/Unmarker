@@ -25,18 +25,20 @@ function frame:CHAT_MSG_TARGETICONS(text, playerName, languageName, channelName,
 				evildoer = w
 			end
 		end
-		inInstance, instanceType = IsInInstance()
-		if instanceType == "pvp" and UnmarkerDB.PVP == true then
-			WarnThem(evildoer)
-		elseif instanceType == "arena" and UnmarkerDB.PVP == true then
-			WarnThem(evildoer)
-		elseif instanceType == "party" and UnmarkerDB.Dungeons == true then
-			WarnThem(evildoer)
-		elseif instanceType == "raid" and UnmarkerDB.Raids == true then
-			WarnThem(evildoer)
-		elseif instanceType == "none" and UnmarkerDB.OpenWorld == true then
-			WarnThem(evildoer)
-		end		
+		if evildoer ~= name then
+			inInstance, instanceType = IsInInstance()
+			if instanceType == "pvp" and UnmarkerDB.PVP == true then
+				WarnThem(evildoer)
+			elseif instanceType == "arena" and UnmarkerDB.PVP == true then
+				WarnThem(evildoer)
+			elseif instanceType == "party" and UnmarkerDB.Dungeons == true then
+				WarnThem(evildoer)
+			elseif instanceType == "raid" and UnmarkerDB.Raids == true then
+				WarnThem(evildoer)
+			elseif instanceType == "none" and UnmarkerDB.OpenWorld == true then
+				WarnThem(evildoer)
+			end
+		end
 	end
 end
 
